@@ -1,0 +1,75 @@
+<html>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css" >
+
+<body>
+
+
+  <div class='pattern'/>
+
+
+  <div class="container-fluid">
+    <video  autoplay muted loop>
+      <source src="cover.mp4" type="video/mp4">
+      </video>
+    </div>
+
+
+    <div class="separator container-fluid "></div>
+    <div id='second' class="row justify-content-center">
+      <a href="https://google.com"><img class='icon 'src="./icons/spotify.jpg"  ></a>
+      <a href=""><img class='icon 'src="./icons/yt.jpg"  ></a>
+      <a href=""><img class='icon 'src="./icons/apple.jpg"  ></a>
+      <a href=""><img class='icon 'src="./icons/itunes.jpg"  ></a>
+      <a href=""><img class='icon 'src="./icons/deezer.jpg"  ></a>
+    </div>
+
+
+
+    <div  style='margin-top: 50px; 'class="row justify-content-center">
+
+      <img class='wow' src="./other/font.png"  >
+    </div>
+
+    <div id='vinyl' class=" row justify-content-center">
+      <img class='hover vinyl_img ' onclick="playYT()" width="500" height="500" src="./other/vinyl.png"  >
+    </div>
+
+    <div  class=" row justify-content-center">
+      <img class='hover digital blink' onclick="playYT()" src="./other/digital.png"  >
+    </div>
+
+
+    <div  class=" row justify-content-center">
+      <iframe id='iframe'width="560" height="315" src="https://www.youtube.com/embed/TUVcZfQe-Kw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+
+    <div class='space'>
+      <p>hehe</p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+      window.scrollTo(0, 0);
+      setTimeout(function(){window.scrollBy(0,300)},1000);
+
+
+
+      function  playYT(){
+        document.getElementById("iframe").style.opacity = "1";
+        $("#iframe")[0].src += "?autoplay=1";
+      }
+
+    </script>
+
+
+  </body>
+  </html>
+
+
