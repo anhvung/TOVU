@@ -56,6 +56,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script>
+      var once=true;
       window.scrollTo(0, 0);
       setTimeout(function(){window.scrollBy(0,300)},1000);
 
@@ -64,7 +65,11 @@
       function  playYT(){
         document.getElementById("iframe").style.opacity = "1";
         document.getElementById('iframe').scrollIntoView();
-        $("#iframe")[0].src += "?autoplay=1";
+
+        if(once){
+              $("#iframe")[0].src += "?autoplay=1";
+              once=false;
+        }
       }
 
     </script>
